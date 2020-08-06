@@ -24,6 +24,6 @@ module "high_altitude" {
   no_proxy                  = "'localhost,http://127.0.0.1,10.0.0.0/8'"
   private_subnets           = ["subnet-9d3d7deb", "subnet-2c3b7b48", "subnet-5468cc0d"]
   public_subnets            = ["subnet-3b37774d", "subnet-2f3e7e4b", "subnet-e27dd9bb"]
-  ssh_cidrs                 = "10.0.0.0/8"
+  ssh_cidrs                 = ["10.0.0.0/8"]
   vpc_id                    = "vpc-8ad750ee"
 }
