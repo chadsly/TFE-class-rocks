@@ -5,3 +5,7 @@ variable "AWS_ACCESS_KEY" {
 variable "AWS_SECRET_KEY" {
   default = ""
 }
+
+variable "instance_type" {
+  default = ""
+}
