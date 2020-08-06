@@ -9,3 +9,11 @@ variable "AWS_SECRET_KEY" {
 variable "instance_type" {
   default = ""
 }
+
+variable "high_altitude_NEXUS_USERNAME" {
+  default = ""
+}
+
+variable "high_altitude_NEXUS_PASSWORD" {
+  default = ""
+}
