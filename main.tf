@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "app" {
   ami           = "ami-adecdbcc"
-  instance_type = "t2.micro"
+  instance_type = var.instance_type #"t2.micro"
   subnet_id     = "subnet-9d3d7deb"
 
   tags = {
