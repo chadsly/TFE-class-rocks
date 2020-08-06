@@ -1,3 +1,3 @@
-output "instance_ip_addr" {
-  value = aws_instance.app.*.private_ip
+output "pem_file" {
+  value = module.high_altitude.pem_file
 }
