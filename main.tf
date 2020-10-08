@@ -3,14 +3,14 @@ provider "aws" {
   region     = "us-gov-west-1"
   access_key = var.AWS_ACCESS_KEY
   secret_key = var.AWS_SECRET_KEY
-  insecure   = true
 }
 
 module "high-altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
   version = "1.0.15"
   providers = {
-    aws = aws.gov-west
+    aws        = aws.gov-west
+    insecure   = true
   }
 
   app_download_url          = "https://nexus.di2e.net/nexus3/repository/Private_OADCGS-GEOINT/Server/Guardian/1.5.17.1342/Guardian-1.5.17.1342.zip"
