@@ -5,9 +5,9 @@ provider "aws" {
   secret_key = var.AWS_SECRET_KEY
 }
 
-module "high_altitude" {
+module "high-altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
-  version = "~>1.0.12"
+  version = "1.0.15"
   providers = {
     aws = aws.gov-west
   }
